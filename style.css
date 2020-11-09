@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --DarkBlue: hsl(233, 26%, 24%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --LimeGreen: hsl(136, 65%, 51%);
+
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    color: hsla(233, 8%, 62%, 0.5)
+}
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+/* ------------------------TEXT FORMATTING------------------------ */
+p {
+    color: var(--GrayishBlue);
+}
+main section#first p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 18%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.5rem;
+}
+main section#second div.partA p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-width: 64%;
+    line-height: 155%;
+    padding: 2% 0 6%;
+}
+main section#second div.partB p {
+    font-size: 1.2rem;
+}
+h1, h2, h3 {
+    color: var(--DarkBlue);
+    font-weight: 300;
+}
+h1 {
+    font-size: 3.4rem;
+    margin-left: 18%;
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 3rem;
+    padding-top: 8%;
+}
+h3 {
+    padding: 10% 0;
+}
+cite {
+    font-size: 0.6rem;
+    font-style: normal;
+    color: hsla(233, 8%, 62%, 0.5);
+    font-weight: 400;
+    margin-left: 15px;
+}
+main section#third div.partB > div h3 {
+    margin-left: 15px;
+    padding: 10px 0;
+}
+main section#third div.partB > div p {
+    margin: 0 25px 0 15px;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+}
+
+/* ------------------------HEADER STYLING------------------------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--LightGrayishBlue);
+    margin: 1% 7%;
+}
+header li {
+    color: var(--GrayishBlue);
+    padding: 15px;
+    letter-spacing: -1.5px;
+}
+
+/*------------------------- MAIN STYLING------------------------- */
+main section#first div.texts {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+main section#first div.texts span {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 18%;
+}
+main section#first div.image {
+    position: relative;
+}
+main section#first div.image img:after {
+    content: 'AKERELE TOSIN JAMES';
+    position: absolute;
+    background: red;
+    max-width: 100%;
+    /* background-image: url('./images/image-mockups.png'); */
+}
+main section#first, main section#third {
+    background-color: var(--VeryLightGray);
+}
+main section#first {
+    display: grid;
+    grid-template-columns: 38% 52%;
+    grid-gap: 10%;
+}
+main section#second {
+    background-color: var(--LightGrayishBlue);
+    padding: 0 7% 7%;
+}
+main section#second div.partB >div {
+    padding: 0 5px;
+}
+main section#second div.partB, main section#third div.partB {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+main section#third div.partB {
+    grid-gap: 35px;
+}
+section#third h2 {
+    /* padding: 0; */
+    width: 85%;
+    margin: 0 auto;
+}
+main section#third div.partB {
+    max-width: 85%;
+    margin: 57px auto 0;
+    padding-bottom: 7%;
+}
+main section#third div.partB div.box {
+    background: var(--White);
+}
+main section#third div.partB div.box img {
+    max-width: 100%;
+    height: 209.19px;
+    margin-bottom: 15px;
+}
+
+span {
+    color: var(--White);
+    background: #31D45D;
+    background: -webkit-linear-gradient(left, #31D45D, #2BB7DA);
+    background: -moz-linear-gradient(left, #31D45D, #2BB7DA);
+    background: linear-gradient(to right, #31D45D, #2BB7DA);
+    border-radius: 2rem;
+    padding: 15px 40px;
+}
+/* ---------------------LIST & LINKS STYLING --------------------- */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+/*--------------------- FOOTER STYLING--------------------- */
+footer{
+    background: var(--DarkBlue);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+footer.blue div#box1 img.brand-logo {
+    margin: 40% 0 0;
+}
+footer.blue div#box1 ul {
+    margin: 25% 0 40%;
+}
+footer.blue div#box1 ul li {
+    padding: 6px;
+}
+
+
+footer div#box2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    width: 40%;
+}
+footer.blue div#box2 ul li {
+    padding: 14px;
+    display: grid;
+}
+
+
+
+footer div#box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+footer div#box3 span{
+    margin-bottom: -20px;
+}
+footer div#box3 p{
+    margin-top: -25px;
+}
+/* -------------------------footer------------------------- */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
