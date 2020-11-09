@@ -1,4 +1,5 @@
 # Frontend Mentor - Easybank landing page
+https://akerele180.github.io/EasyBank-Landing-Page/
 
 ![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)
 
