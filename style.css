@@ -91,9 +91,11 @@ header li {
     padding: 15px 15px 28px;
     letter-spacing: -1.5px;
 }
-/* header li:hover {
+
+/* CHECK HERE */
+header li:hover {
     border-bottom: 5px solid var(--LimeGreen);
-} */
+}
 
 /*------------------------- MAIN STYLING------------------------- */
 main section#first div.texts {
