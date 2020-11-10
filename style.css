@@ -68,8 +68,12 @@ main section#third div.partB > div h3 {
     margin-left: 15px;
     padding: 10px 0;
 }
+main section#third div.partB > div h3:hover {
+    color: var(--LimeGreen);
+    cursor: pointer;
+}
 main section#third div.partB > div p {
-    margin: 0 25px 0 15px;
+    margin: 0 25px 25px 15px;
     font-size: 0.7rem;
     line-height: 1.1rem;
 }
@@ -84,9 +88,12 @@ header {
 }
 header li {
     color: var(--GrayishBlue);
-    padding: 15px;
+    padding: 15px 15px 28px;
     letter-spacing: -1.5px;
 }
+/* header li:hover {
+    border-bottom: 5px solid var(--LimeGreen);
+} */
 
 /*------------------------- MAIN STYLING------------------------- */
 main section#first div.texts {
@@ -100,7 +107,8 @@ main section#first div.texts span {
     margin-left: 18%;
 }
 main section#first div.image {
-    position: relative;
+    /* position: relative; */
+    overflow: hidden;
 }
 main section#first div.image img:after {
     content: 'AKERELE TOSIN JAMES';
@@ -160,6 +168,9 @@ span {
     border-radius: 2rem;
     padding: 15px 40px;
 }
+span:hover {
+    filter: brightness(1.2);
+}
 /* ---------------------LIST & LINKS STYLING --------------------- */
 a {
     text-decoration: none;
@@ -187,6 +198,10 @@ footer.blue div#box1 ul {
 footer.blue div#box1 ul li {
     padding: 6px;
 }
+footer.blue div#box1 ul svg path:hover {
+    /* color: var(--LimeGreen); */
+    fill: var(--LimeGreen);
+}
 
 
 footer div#box2 {
@@ -199,7 +214,10 @@ footer.blue div#box2 ul li {
     padding: 14px;
     display: grid;
 }
+footer.blue div#box2 ul a:hover  {
+    color: var(--LimeGreen);
 
+}
 
 
 footer div#box3 {
