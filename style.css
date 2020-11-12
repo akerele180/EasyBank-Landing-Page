@@ -109,16 +109,22 @@ main section#first div.texts span {
     margin-left: 18%;
 }
 main section#first div.image {
-    /* position: relative; */
     overflow: hidden;
+    /* background-image: url('./images/bg-intro-desktop.svg'); */
+    background-repeat: no-repeat;
+    
 }
-main section#first div.image img:after {
-    content: 'AKERELE TOSIN JAMES';
-    position: absolute;
-    background: red;
-    max-width: 100%;
-    /* background-image: url('./images/image-mockups.png'); */
+section#first div.image div.image_box::after {
+    content: '';
+    height: 928px;
+    bottom: 615px;
+    width: 100%;
+    display: inline-block;
+    background: url(./images/image-mockups.png) no-repeat;
+    z-index: 5;
+    position: relative;
 }
+
 main section#first, main section#third {
     background-color: var(--VeryLightGray);
 }
@@ -126,6 +132,7 @@ main section#first {
     display: grid;
     grid-template-columns: 38% 52%;
     grid-gap: 10%;
+    height: 45rem;
 }
 main section#second {
     background-color: var(--LightGrayishBlue);
@@ -237,3 +244,22 @@ footer div#box3 p{
 /* -------------------------footer------------------------- */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* --------------------MOBILE RESPONSIVENESS--------------------*/
+@media screen and (min-width: 1116px) and (max-width: 1261px){
+    h1 {
+        font-size: 2.8rem;
+    }
+}
+@media screen and (min-width: 920px) and (max-width: 1115px){
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    main section#second div.partB p {
+        font-size: 0.89rem;
+    }
+}
