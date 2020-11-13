@@ -129,11 +129,11 @@ main section#first, main section#third {
     background-color: var(--VeryLightGray);
 }
 main section#first {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 38% 52%;
     grid-gap: 10%;
     height: 45rem;
-}
+}  
 main section#second {
     background-color: var(--LightGrayishBlue);
     padding: 0 7% 7%;
@@ -261,5 +261,100 @@ footer div#box3 p{
     }
     main section#second div.partB p {
         font-size: 0.89rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    header {
+        padding: 20px 0;
+    }
+    header ul, header span {
+        display: none;
+    }
+    main section#first {
+        display: flex;
+        flex-direction: column-reverse;
+        /* grid-template-columns: none; */
+    }
+    main section#first div.texts h1 {
+        margin: 10% 10% 1%;
+        letter-spacing: 0;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    main section#first p {
+        margin: 0;
+        text-align: center;
+        padding: 15px 18px;
+        font-size: 1rem;
+    }
+    main section#first div.texts span {
+        margin: 20px auto 90px;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2.7rem;
+    }
+    main section#second div.partA p {
+        font-size: 0.9rem;
+        max-width: none;
+        text-align: center;
+        line-height: 1.6rem;
+        padding: 20px 0 40px;
+    }
+    main section#second div.partB, main section#third div.partB {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    main section#second div.partB p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        padding-bottom: 40px;
+    }
+    section#third h2 {
+        padding-top: 95px;
+    }
+    main section#third div.partB div.box {
+        background: var(--White);
+        text-align: left;
+    }
+    main section#third div.partB div.box img:nth-child(1) {
+        width: 100%;
+    }
+    main section#third div.partB > div p {
+        font-size: 0.9rem;
+        margin: -10px 0 0 16px;
+        line-height: 1.5rem;
+        padding: 14px 0;
+    }
+    main section#third div.partB > div h3 {
+        font-size: 1.5rem;
+    }
+    footer {
+        text-align: center;
+        display: block;
+    }
+    footer div#box2 {
+        display: inline-block;
+        width: 165px;
+    }
+    footer.blue div#box1 img.brand-logo {
+        margin: 60px 0 0 0;
+    }
+    footer.blue div#box1 ul {
+        margin: 32px 0 29px 0;
+    }
+    footer.blue div#box2 ul:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    footer div#box3 span {
+        margin: 0 auto;
+    }
+    footer.blue div#box2 ul li {
+        padding: 14px 0 5px; 
+    }
+    footer.blue div#box3 p {
+        margin: 20px auto;
+        text-align: center;
     }
 }
