@@ -91,6 +91,10 @@ header li {
     padding: 15px 15px 28px;
     letter-spacing: -1.5px;
 }
+header ul {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* CHECK HERE */
 header li:hover {
@@ -212,7 +216,6 @@ footer.blue div#box1 ul svg path:hover {
     fill: var(--LimeGreen);
 }
 
-
 footer div#box2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -228,7 +231,6 @@ footer.blue div#box2 ul a:hover  {
 
 }
 
-
 footer div#box3 {
     display: flex;
     flex-direction: column;
@@ -241,12 +243,13 @@ footer div#box3 span{
 footer div#box3 p{
     margin-top: -25px;
 }
-/* -------------------------footer------------------------- */
+/* -------------------------FOOTER------------------------- */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
 /* --------------------MOBILE RESPONSIVENESS--------------------*/
+
 @media screen and (min-width: 1116px) and (max-width: 1261px){
     h1 {
         font-size: 2.8rem;
@@ -263,11 +266,51 @@ footer div#box3 p{
         font-size: 0.89rem;
     }
 }
+
+
+@media  screen and (min-width: 801px){
+    div.svgs {
+        display: none;
+    }
+}
 @media screen and (max-width: 800px) {
+    svg#cancel {
+        display: none;
+    }
+    ul div.lists {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        top: 12%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: var(--White);
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 8px;
+        z-index: 20;
+        animation: swing 1s ease;
+        box-shadow: 70px -1px 100px 8px black;
+    }
+
+    div.lists li {
+        padding: 15px 0;
+        letter-spacing: 0.8px;
+        color: var(--DarkBlue);
+        font-size: 1.2rem;
+    }
+    div.lists li:nth-child(1) {
+        margin-top: 8%;
+    }
+    div.lists li:nth-child(5) {
+        margin-bottom: 8%;
+    }
+
     header {
         padding: 20px 0;
     }
-    header ul, header span {
+    header span {
         display: none;
     }
     main section#first {

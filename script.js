@@ -1,8 +1,17 @@
-const listStyle = document.getElementsByTagName('header')[0].getElementsByTagName('ul')[0].querySelectorAll('li')[1];
+const hamburgerCancel = document.getElementById('cancel');
+const hamburger = document.getElementById('hamburger');
+const dropDown = document.querySelector('.lists');
 
-listStyle.addEventListener('mouseover', function(){
-    listStyle.style.cssText = 'border-bottom: 5px solid var(--LimeGreen);'
-});
-listStyle.addEventListener('mouseout', function(){
-    listStyle.style.cssText = 'border-bottom: none;'
+hamburger.addEventListener('click', ()=>{
+    hamburger.style.display = 'none';
+    hamburgerCancel.style.display = 'block';
+    dropDown.style.display = 'flex';
+    // dropDown.style = 'top 2s ease';
+})
+
+hamburgerCancel.addEventListener('click', ()=>{
+    hamburger.style.display = 'block';
+    hamburgerCancel.style.display = 'none';
+    dropDown.style.display='none';
+    dropDown.style.transition = 'top 1s ease';
 })
