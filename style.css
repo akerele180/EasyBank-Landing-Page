@@ -114,11 +114,11 @@ main section#first div.texts span {
 }
 main section#first div.image {
     overflow: hidden;
-    /* background-image: url('./images/bg-intro-desktop.svg'); */
     background-repeat: no-repeat;
     
 }
 section#first div.image div.image_box::after {
+    position: relative;
     content: '';
     height: 928px;
     bottom: 615px;
@@ -126,7 +126,6 @@ section#first div.image div.image_box::after {
     display: inline-block;
     background: url(./images/image-mockups.png) no-repeat;
     z-index: 5;
-    position: relative;
 }
 
 main section#first, main section#third {
@@ -172,7 +171,7 @@ main section#third div.partB div.box img {
     margin-bottom: 15px;
 }
 
-span {
+.span {
     color: var(--White);
     background: #31D45D;
     background: -webkit-linear-gradient(left, #31D45D, #2BB7DA);
@@ -181,7 +180,7 @@ span {
     border-radius: 2rem;
     padding: 15px 40px;
 }
-span:hover {
+.span:hover {
     filter: brightness(1.2);
 }
 /* ---------------------LIST & LINKS STYLING --------------------- */
@@ -237,7 +236,7 @@ footer div#box3 {
     align-items: flex-start;
     justify-content: space-evenly;
 }
-footer div#box3 span{
+footer div#box3 .span{
     margin-bottom: -20px;
 }
 footer div#box3 p{
@@ -310,7 +309,7 @@ footer div#box3 p{
     header {
         padding: 20px 0;
     }
-    header span {
+    header .span {
         display: none;
     }
     main section#first {
@@ -330,7 +329,7 @@ footer div#box3 p{
         padding: 15px 18px;
         font-size: 1rem;
     }
-    main section#first div.texts span {
+    main section#first div.texts .span {
         margin: 20px auto 90px;
     }
     h2 {
@@ -390,7 +389,7 @@ footer div#box3 p{
     footer.blue div#box2 ul:nth-child(2) {
         margin-bottom: 30px;
     }
-    footer div#box3 span {
+    footer div#box3 .span {
         margin: 0 auto;
     }
     footer.blue div#box2 ul li {
